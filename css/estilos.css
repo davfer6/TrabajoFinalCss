@@ -1,0 +1,344 @@
+@font-face {
+	font-family: 'Dancing Script';
+	src: url(../fonts/DancingScript-Regular.otf);
+}
+
+
+
+/*Animación*/
+header{
+	animation-name: animacion_header;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes animacion_header{
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}	
+}
+
+
+
+
+
+#menu-principal a{
+  color: white;
+}
+
+
+
+#menu-principal .actual{
+  text-decoration: none;
+}
+
+#menu-principal a:link, #banner nav a:visited {
+	color: #fff;
+	height: 30px;
+	
+		
+}
+#menu-principal a:hover, #banner nav a:active{
+	border-radius: 15px 10px;
+	background: hsla(200, 60%, 50%, 0.65);
+	text-shadow: none !important;
+}
+#menu-principal .active a:link, #banner nav .active a:visited {
+	border-radius: 15px 10px 6px;
+	background: #3399CC;
+	text-shadow: none !important;
+}
+
+
+
+/*Computadoras*/
+@media (min-width: 900px) {
+
+.cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0 ;
+	text-shadow: 2px 2px #02010a;
+  	padding: 15px 0;
+  	display: flex;
+  	flex-direction: row;
+}
+
+#tituloCabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+
+
+#menu-principal{
+	padding-top:25px;
+  	width: 30%;
+  	font-size: 18pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	
+	background-color: black;
+	color: white;
+	font-family: Dancing Script, Arial;
+
+	width: 900px;
+	margin: 0 auto;
+   	min-height: 200px;
+}
+
+
+
+
+
+
+
+.contenedor1{
+	padding:0.1%;
+	background: #82c3a6;
+	width: 100%;
+}
+
+
+#imagen1 img{
+	margin: 3% 5%;
+	width: 90%;
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+.contenedor2{
+	background: #d5c75f;
+	display: flex;
+	width: 100%;
+}
+
+#imagen2, #imagen3{
+	width: 50%;
+}
+
+#imagen2 img, #imagen3 img{
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	-moz-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: box-shadow(2px 2px 2px 2px #02010a);
+	
+
+	max-height: 270px;
+
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px #82c3a6;
+}
+
+#imagen3 img:hover{
+	transform: translate(20px,-5px);
+	box-shadow: 2px solid #82c3a6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-color: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	color: black;
+}
+
+footer div{
+	flex-direction: row;
+}
+
+#contacto{
+	width: 25%;
+	text-align: center;
+}
+
+#terminos{
+	width: 25%;
+	text-align: center;
+}
+
+#redes_sociales{
+	width: 25%;
+	text-align: center;
+}
+
+#derechos{
+	width: 25%;
+	text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+/*Moviles*/
+@media (max-width: 899px) {
+.cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0 ;
+	text-shadow: 2px 2px #02010a;
+  	padding: 15px 0;
+  	display: flex;
+  	flex-direction: column;
+}
+
+#tituloCabecera{
+  max-width: 100%;
+  text-indent: 8%;
+}
+
+
+#menu-principal{
+	text-indent: 18%;
+  	width: 100%;
+  	font-size: 18pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	body{
+	
+	background-color: black;
+	color: white;
+	font-family: Dancing Script, Arial;
+	margin: 0 auto;
+	width: 100%;
+	
+	}
+
+
+
+
+
+.contenedor1{
+	padding:0.1%;
+	background: #82c3a6;
+	max-width: 100%;
+}
+
+
+#imagen1 img{
+	margin: 3% 5%;
+	max-width: 90%;
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+.contenedor2{
+	background: #d5c75f;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+#imagen2, #imagen3{
+	max-width: 100%;
+}
+
+#imagen2 img, #imagen3 img{
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	-moz-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: box-shadow(2px 2px 2px 2px #02010a);
+	max-width: 93%;
+	padding: 10px;
+	
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px #82c3a6;
+}
+
+#imagen3 img:hover{
+	transform: translate(20px,-5px);
+	box-shadow: 2px solid #82c3a6;
+}
+
+
+
+
+
+
+
+footer{
+	background-color: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	text-align: center;
+}
+
+footer div{
+	flex-direction: column;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

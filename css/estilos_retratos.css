@@ -1,0 +1,323 @@
+@font-face {
+	font-family: 'Dancing Script';
+	src: url(../fonts/DancingScript-Regular.otf);
+}
+
+
+/*Animación*/
+header{
+	animation-name: animacion_header;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@-webkit-keyframes animacion_header{
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}	
+}
+
+
+
+
+
+
+
+
+#menu-principal a{
+  color: white;
+}
+
+#menu-principal .actual{
+  text-decoration: none;
+}
+
+
+
+
+#menu-principal a:link, #banner nav a:visited {
+	color: #fff;
+	height: 30px;
+	
+		
+}
+#menu-principal a:hover, #banner nav a:active{
+	border-radius: 15px 10px;
+	background: hsla(200, 60%, 50%, 0.65);
+	text-shadow: none !important;
+}
+#menu-principal .active a:link, #banner nav .active a:visited {
+	border-radius: 15px 10px 6px;
+	background: #3399CC;
+	text-shadow: none !important;
+}
+
+
+#imagen1{
+	filter: blur(10px);
+}
+
+#imagen2,#imagen4,#imagen6 img{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%); 
+}
+
+#imagen3 img{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
+
+
+
+
+
+
+/*Computadoras*/
+@media (min-width: 900px) {
+
+.cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0 ;
+	text-shadow: 2px 2px #02010a;
+  	padding: 15px 0;
+  	display: flex;
+  	flex-direction: row;
+}
+
+
+
+
+
+#tituloCabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+
+
+#menu-principal{
+	padding-top:25px;
+  	width: 30%;
+  	font-size: 18pt;
+}
+
+
+
+body {
+	
+	background-color: black;
+	color: white;
+	font-family: Dancing Script, Arial;
+
+	width: 900px;
+	margin: 0 auto;
+   	min-height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-tabla{
+
+display: table;
+
+}
+
+.contenedor_fila{
+
+display: table-row;
+width: 100%
+}
+
+.contenedor_columna{
+
+display: table-cell;
+
+}
+
+
+
+
+img{
+	-webkit-filter: box-shadow(2px 2px 2px 2px#02010a);
+	-moz-filter: box-shadow(2px 2px 2px 2px#02010a);
+	filter: box-shadow(2px 2px 2px 2px #02010a);
+	
+	border: 1px;
+	max-height: 212px;
+	max-width: 90%;
+
+	padding: 10px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	background-color: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	color: black;
+}
+
+footer div{
+	flex-direction: row;
+}
+
+#contacto{
+	width: 25%;
+	text-align: center;
+}
+
+#terminos{
+	width: 25%;
+	text-align: center;
+}
+
+#redes_sociales{
+	width: 25%;
+	text-align: center;
+}
+
+#derechos{
+	width: 25%;
+	text-align: center;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Moviles*/
+@media (max-width: 899px) {
+.cabecera{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0 ;
+	text-shadow: 2px 2px #02010a;
+  	padding: 15px 0;
+  	display: flex;
+  	flex-direction: column;
+}
+
+#tituloCabecera{
+  max-width: 100%;
+  text-indent: 8%;
+}
+
+
+#menu-principal{
+	text-indent: 18%;
+  	width: 100%;
+  	font-size: 18pt;
+}
+
+
+
+
+body{
+	background-color: black;
+	color: white;
+	font-family: Dancing Script, Arial;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
+.contenedor-tabla{
+
+display: inline-block;
+
+}
+
+.contenedor_fila{
+
+display: inline-block;
+max-width: 100%
+}
+
+.contenedor_columna{
+
+display: inline-block;
+
+}
+
+
+
+img{
+	-webkit-filter: box-shadow(2px 2px 2px 2px#02010a);
+	-moz-filter: box-shadow(2px 2px 2px 2px#02010a);
+	filter: box-shadow(2px 2px 2px 2px #02010a);
+	
+	border: 1px;
+	max-width: 90%;
+
+	padding: 10px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+footer{
+	background-color: #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	text-align: center;
+}
+
+footer div{
+	flex-direction: column;
+}
+
+
+}
